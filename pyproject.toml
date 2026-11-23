@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medsparse-playground"
+version = "0.1.0"
+description = "Launch the MedSparse browser inference playground on localhost"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+
+[project.urls]
+Repository = "https://github.com/su394611-del/medsparse-playground"
+Playground = "https://su394611-del.github.io/playground/"
+
+[project.scripts]
+medsparse-playground = "medsparse_playground.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools.package-data]
+medsparse_playground = ["web/index.html", "web/assets/*"]
