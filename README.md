@@ -2,6 +2,17 @@
 
 Run the MedSparse inference playground in your own browser. The Python launcher serves the interface on localhost. Choose a model, load its files from Hugging Face, and enter a prompt. Generation runs in a browser worker. The first model load requires internet access.
 
+## Models
+
+| Tab | Model | Parameters |
+|---|---|---|
+| MIRIAD SFT (new in 0.2.0, default) | [medsparse-healthcare-miriad-sft](https://huggingface.co/sudhanshu42844/medsparse-healthcare-miriad-sft), fine-tuned on [MIRIAD 5.8M](https://huggingface.co/datasets/miriad/miriad-5.8M) | 38.8M |
+| Medical SFT | [medsparse-healthcare-medical-sft](https://huggingface.co/sudhanshu42844/medsparse-healthcare-medical-sft) | 38.8M |
+| Pretrained | [medsparse-healthcare-pretrained-from-scratch](https://huggingface.co/sudhanshu42844/medsparse-healthcare-pretrained-from-scratch) | 38.8M |
+| Tiny GPT | [my-tiny-llm](https://huggingface.co/sudhanshu42844/my-tiny-llm) | 1.06M |
+
+Each MedSparse model is a 155 MB download, cached by the browser after the first load. Held-out results are in the [technical report](https://su394611-del.github.io/research/medsparse-healthcare-2026/).
+
 ## Install and run
 
 Requires Python 3.10 or later and a modern browser.
