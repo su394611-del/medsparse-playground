@@ -44,7 +44,7 @@
   var worker = null;
   function getWorker() {
     if (worker) return worker;
-    worker = new Worker('worker-src.js');
+    worker = new Worker('assets/worker-src.js');
     worker.onmessage = onWorkerMessage;
     worker.onerror = function (e) { setStatus(current, 'Something went wrong: ' + (e.message || 'worker error'), 'err'); };
     return worker;

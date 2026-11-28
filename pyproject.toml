@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "medsparse-playground"
-version = "0.2.0"
+version = "0.2.1"
 description = "Launch the MedSparse browser inference playground on localhost"
 readme = "README.md"
 requires-python = ">=3.10"
